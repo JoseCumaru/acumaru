@@ -38,7 +38,3 @@ Acumaru Consultoria Ambiental é um projeto dedicado a oferecer soluções ambie
    git clone https://github.com/JoseCumaru/acumaru
    ```
 2. Abra o arquivo `index.html` em um navegador para visualizar o site.
-
-## Licença
-
-Este projeto é protegido por direitos autorais. Todos os direitos reservados a Acumaru Consultoria Ambiental.
