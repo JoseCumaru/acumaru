@@ -1,5 +1,8 @@
 # Acumaru Consultoria Ambiental
 
+## Acesse o site no link abaixo
+https://acumaru.netlify.app/
+
 ## Descrição
 Acumaru Consultoria Ambiental é um projeto dedicado a oferecer soluções ambientais inovadoras e sustentáveis na Amazônia. O objetivo é harmonizar o desenvolvimento socioeconômico com a conservação ambiental, fornecendo ferramentas e expertise para empresas, comunidades e órgãos públicos.
 
@@ -61,11 +64,11 @@ services/
 - Contato via email e WhatsApp.
 - Integração com redes sociais.
 
-## Como Usar
+## Como clonar
 
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/JoseCumaru/acumaru
    ```
 2. Abra o arquivo `index.html` em um navegador para visualizar o site.
 
