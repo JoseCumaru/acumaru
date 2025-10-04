@@ -1,0 +1,34 @@
+<div class="whatsapp-float">
+  <a href="https://api.whatsapp.com/send?phone=48988536486&text=Olá,%20gostaria%20de%20mais%20informações."
+    target="_blank" aria-label="Fale Conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--cor-secundaria);
+      color: var(--cor-fundo-seccao);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .whatsapp-float i {
+      font-size: 1.5rem;
+      color: var(--cor-fundo-seccao);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</div>

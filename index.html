@@ -17,23 +17,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo-link-header">
-        <img src="assets/logo.png" alt="Logo Acumaru Consultoria Ambiental" class="logo">
-        <h2 class="logo-text">acumaru</h2>
-      </a>
-      <nav id="main-nav">
-        <a href="#sobre">sobre</a>
-        <a href="#servicos">serviços</a>
-        <a href="#porque-acumaru">por que contratar nossos serviços?</a>
-        <a href="#contato">contatos</a>
-      </nav>
-      <button class="menu-toggle" id="menu-toggle-button" aria-label="Abrir menu" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </header>
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
 
   <section class="hero parallax"
     style="background-image: url('https://futuraambiental.ind.br/wp-content/uploads/2023/03/consultoria-ambiental-1.jpg');">
@@ -120,59 +105,8 @@
     <div class="container">
       <h2>Nossos Serviços</h2>
       <p class="subtitle-section">Soluções completas para a gestão ambiental da sua empresa.</p>
-      <div class="cards">
-
-        <!-- PGRS -->
-        <a href="services/pgrs.html" class="card">
-          <div class="card-icon-wrapper">
-            <i data-lucide="recycle" class="lucide-icon"></i>
-          </div>
-          <h3 class="card-title">Plano de Gerenciamento de Resíduos Sólidos (PGRS)</h3>
-          <p class="card-description">Garanta a destinação correta dos seus resíduos e evite sanções.</p>
-          <span class="card-link-text">Saiba Mais <i data-lucide="arrow-right" class="lucide-icon-small"></i></span>
-        </a>
-
-        <!-- Licenciamento Ambiental -->
-        <a href="services/licenciamento.html" class="card">
-          <div class="card-icon-wrapper">
-            <i data-lucide="file-check" class="lucide-icon"></i>
-          </div>
-          <h3 class="card-title">Licenciamento Ambiental</h3>
-          <p class="card-description">Navegue pelo processo de licenciamento com segurança e agilidade.</p>
-          <span class="card-link-text">Saiba Mais <i data-lucide="arrow-right" class="lucide-icon-small"></i></span>
-        </a>
-
-        <!-- Programas Ambientais -->
-        <a href="services/programas.html" class="card">
-          <div class="card-icon-wrapper">
-            <i data-lucide="leaf" class="lucide-icon"></i>
-          </div>
-          <h3 class="card-title">Programas Ambientais</h3>
-          <p class="card-description">Implemente programas eficazes para mitigação e compensação de impactos.</p>
-          <span class="card-link-text">Saiba Mais <i data-lucide="arrow-right" class="lucide-icon-small"></i></span>
-        </a>
-
-        <!-- Laudos e Pareceres -->
-        <a href="services/laudos.html" class="card">
-          <div class="card-icon-wrapper">
-            <i data-lucide="file-text" class="lucide-icon"></i>
-          </div>
-          <h3 class="card-title">Laudos e Pareceres Técnicos</h3>
-          <p class="card-description">Avaliações precisas para embasar as suas decisões e projetos.</p>
-          <span class="card-link-text">Saiba Mais <i data-lucide="arrow-right" class="lucide-icon-small"></i></span>
-        </a>
-
-        <!-- Viabilidade Ambiental -->
-        <a href="services/viabilidade.html" class="card">
-          <div class="card-icon-wrapper">
-            <i data-lucide="shield-check" class="lucide-icon"></i>
-          </div>
-          <h3 class="card-title">Certidão de Viabilidade Ambiental</h3>
-          <p class="card-description">Planeje os seus empreendimentos com segurança e clareza regulatória.</p>
-          <span class="card-link-text">Saiba Mais <i data-lucide="arrow-right" class="lucide-icon-small"></i></span>
-        </a>
-
-      </div>
+      <!-- Cards Component -->
+      <div id="cards-placeholder"></div>
     </div>
   </section>
 
@@ -189,79 +123,18 @@
     </div>
   </section>
 
-  <div class="whatsapp-float">
-    <a href="https://api.whatsapp.com/send?phone=48988536486&text=Olá,%20gostaria%20de%20mais%20informações."
-      target="_blank" aria-label="Fale Conosco no WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <style>
-      .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: var(--cor-secundaria);
-        color: var(--cor-fundo-seccao);
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-      }
+  <!-- WhatsApp Button Component -->
+  <div id="whatsapp-placeholder"></div>
 
-      .whatsapp-float i {
-        font-size: 1.5rem;
-        color: var(--cor-fundo-seccao);
-        transition: transform 0.3s ease;
-      }
-
-      .whatsapp-float:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-      }
-    </style>
-  </div>
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-sobre">
-        <img src="assets/logo.png" alt="Logo Acumaru Rodapé" class="footer-logo">
-        <p>Acumaru Consultoria Ambiental<br>Soluções sustentáveis para um futuro melhor.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Links Rápidos</h4>
-        <ul>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#porque-acumaru">Por que a Acumaru?</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-      <div class="footer-contato">
-        <h4>Contato</h4>
-        <p><i class="fas fa-envelope"></i> <a
-            href="mailto:contato@acumaruambiental.com">contato@acumaruambiental.com</a></p>
-
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/adriane-cumaru-0919322aa/" aria-label="LinkedIn"><i
-              class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/acumaru/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-
-      </div>
-    </div>
-    <div class="footer-copy">
-      <p>&copy; <span id="currentYear"></span> Acumaru Consultoria Ambiental. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
+  <script src="js/components-loader.js"></script>
   <script src="js/script.js"></script>
 </body>
 
