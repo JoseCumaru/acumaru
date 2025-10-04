@@ -22,7 +22,7 @@
   --cor-texto-contato-subtitulo: #e0e0e0; 
   --cor-texto-footer: #adb5bd;           
   --cor-linha-footer: #064e3b;
-  --cor-menu-mobile-fundo: var(--cor-header-fundo); /* Fundo do menu mobile */
+  --cor-menu-mobile-fundo: var(--cor-header-fundo);
   --cor-menu-mobile-texto: var(--cor-texto-header-nav);
   --cor-menu-mobile-borda: var(--cor-borda-geral);
 } 
