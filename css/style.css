@@ -557,11 +557,18 @@ p {
   color: var(--cor-fundo-seccao); 
   text-decoration: underline; 
 }
+.footer-contato p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .footer-contato i { 
   margin-right: 0.5rem; 
   color: var(--cor-secundaria); 
 }
 .social-icons a { 
+  text-align: center;
   color: var(--cor-texto-footer); 
   font-size: 1.5rem; 
   margin-right: 1rem; 
