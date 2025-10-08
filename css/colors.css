@@ -1,0 +1,28 @@
+:root {
+  /* Suas variáveis originais */
+  --cor-primaria: #064e3b; 
+  --cor-secundaria: #10b981; 
+  --cor-destaque: #f97316; 
+  --cor-fundo: #f0fdf4; 
+  --cor-fundo-seccao: #ffffff; 
+  --cor-texto: #1f2937; 
+  --cor-texto-claro: #4b5563; 
+  --cor-header-fundo: #ffffff; 
+  --cor-footer-fundo: #043028; 
+
+  /* Novas variáveis baseadas nos refinamentos de design */
+  --cor-fundo-body-alternativo: #f8f9fa; 
+  --cor-texto-body-alternativo: #212529; 
+  --cor-secundaria-hover: #059669;      
+  --cor-secundaria-hover-intenso: #047857; 
+  --cor-texto-header-nav: #343a40;      
+  --cor-fundo-icone-wrapper: #e6fcf5;   
+  --cor-fundo-icone-wrapper-hover: #cffdee; 
+  --cor-borda-geral: #e9ecef;          
+  --cor-texto-contato-subtitulo: #e0e0e0; 
+  --cor-texto-footer: #adb5bd;           
+  --cor-linha-footer: #064e3b;
+  --cor-menu-mobile-fundo: var(--cor-header-fundo);
+  --cor-menu-mobile-texto: var(--cor-texto-header-nav);
+  --cor-menu-mobile-borda: var(--cor-borda-geral);
+} 

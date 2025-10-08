@@ -1,33 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-:root {
-  /* Suas variáveis originais */
-  --cor-primaria: #064e3b; 
-  --cor-secundaria: #10b981; 
-  --cor-destaque: #f97316; 
-  --cor-fundo: #f0fdf4; 
-  --cor-fundo-seccao: #ffffff; 
-  --cor-texto: #1f2937; 
-  --cor-texto-claro: #4b5563; 
-  --cor-header-fundo: #ffffff; 
-  --cor-footer-fundo: #043028; 
-
-  /* Novas variáveis baseadas nos refinamentos de design */
-  --cor-fundo-body-alternativo: #f8f9fa; 
-  --cor-texto-body-alternativo: #212529; 
-  --cor-secundaria-hover: #059669;      
-  --cor-secundaria-hover-intenso: #047857; 
-  --cor-texto-header-nav: #343a40;      
-  --cor-fundo-icone-wrapper: #e6fcf5;   
-  --cor-fundo-icone-wrapper-hover: #cffdee; 
-  --cor-borda-geral: #e9ecef;          
-  --cor-texto-contato-subtitulo: #e0e0e0; 
-  --cor-texto-footer: #adb5bd;           
-  --cor-linha-footer: #064e3b;
-  --cor-menu-mobile-fundo: var(--cor-header-fundo); /* Fundo do menu mobile */
-  --cor-menu-mobile-texto: var(--cor-texto-header-nav);
-  --cor-menu-mobile-borda: var(--cor-borda-geral);
-} 
+@import url('colors.css');
 
 body {
   margin: 0;
@@ -585,11 +557,17 @@ p {
   color: var(--cor-fundo-seccao); 
   text-decoration: underline; 
 }
+.footer-contato p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .footer-contato i { 
   margin-right: 0.5rem; 
   color: var(--cor-secundaria); 
 }
 .social-icons a { 
+  text-align: center;
   color: var(--cor-texto-footer); 
   font-size: 1.5rem; 
   margin-right: 1rem; 
@@ -603,6 +581,7 @@ p {
   font-size: 0.85rem; 
 }
 .footer-copy p { 
+  text-align: center;
   margin:0; 
 }
 
@@ -718,7 +697,8 @@ p {
   #contato .container.center .button, 
   .button-contato { display: block; margin-left: auto; margin-right: auto; width: -moz-fit-content; width: fit-content; max-width: 90%; }
   .footer-container { grid-template-columns: 1fr; text-align: center; }
-  .footer-sobre, .footer-links, .footer-contato { align-items: center; text-align: center; }
+  .footer-sobre, .footer-links, .footer-contato { align-items: center; text-align: center;}
+  .footer-contato p{justify-content: center;}
   .footer-logo { margin-left: auto; margin-right: auto; }
   .footer ul { padding-left: 0; display: inline-block; text-align: center; }
 }
@@ -749,6 +729,9 @@ p {
     }
     .footer p{
       text-align: center;
+    }
+    .footer-contato p{
+      justify-content: center;
     }
 }
 
