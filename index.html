@@ -190,9 +190,10 @@
   </section>
 
   <div class="whatsapp-float">
-    <a href="https://api.whatsapp.com/send?phone=48988536486&text=Olá,%20gostaria%20de%20mais%20informações."
+    <a
       target="_blank" aria-label="Fale Conosco no WhatsApp">
-      <i class="fab fa-whatsapp"></i>
+      
+      <i class="fa-brands fa-rocketchat" style="color: rgb(255, 255, 255);"></i>
     </a>
     <style>
       .whatsapp-float {
@@ -262,7 +263,27 @@
   <script>
     lucide.createIcons();
   </script>
+  
+  <!-- Chatbot HTML -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <h4>Acumaru<i class=""></i></h4>
+      <button id="chatbot-close"><i class="fa-solid fa-xmark"></i></button>
+      
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="message bot-message">Olá! Sou a assistente virtual da Acumaru. Como posso ajudar você hoje?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input-field" placeholder="Digite sua mensagem...">
+      <button id="chatbot-send-btn"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <!-- End Chatbot HTML -->
+
   <script src="js/script.js"></script>
+  <script src="js/chatbot-contexto.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 
 </html>
