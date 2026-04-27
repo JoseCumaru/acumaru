@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatbotSendBtn = document.getElementById('chatbot-send-btn');
 
   // Adicione sua chave de API do Google AI Studio aqui
-  const API_KEY = 'AIzaSyAQN_Y186goZaZ9YiaeaLXcXwPorFPpWSQ'; 
+  const API_KEY = 'SUA_CHAVE_API_AQUI'; 
   const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`;
 
   if (whatsappFloat) {
