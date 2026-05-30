@@ -394,24 +394,6 @@ Exemplo de resposta:
 
 ---
 
-# 13. Informações que o Chatbot Pode Coletar do Cliente
-
-Para encaminhar melhor o atendimento, o chatbot pode solicitar:
-
-* Nome do cliente;
-* Nome da empresa;
-* CNPJ, se aplicável;
-* Cidade e estado;
-* Tipo de atividade exercida;
-* Porte do empreendimento;
-* Se já possui licença ambiental;
-* Se recebeu alguma notificação ou exigência de órgão ambiental;
-* Qual serviço deseja contratar;
-* Prazo desejado;
-* Telefone ou e-mail para contato.
-
----
-
 # 14. Restrições do Chatbot
 
 O chatbot não deve:
