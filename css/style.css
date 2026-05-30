@@ -828,7 +828,7 @@ p {
 }
 
 .bot-message {
-  background: var(--cor-fundo-icone-wrapper);
+  background-color: #e0e0e0c0;
   color: var(--cor-texto);
   align-self: flex-start;
   border-bottom-left-radius: 0;
@@ -841,7 +841,7 @@ p {
 }
 
 .user-message {
-  background: var(--cor-secundaria);
+  background-color: #10b981b0;
   color: #fff;
   align-self: flex-end;
   border-bottom-right-radius: 0;
