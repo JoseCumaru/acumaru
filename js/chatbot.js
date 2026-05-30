@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatbotInputField = document.getElementById('chatbot-input-field');
   const chatbotSendBtn = document.getElementById('chatbot-send-btn');
 
-  // Adicione sua chave de API do Google AI Studio aqui
-  const API_KEY = 'SUA_CHAVE_API_AQUI'; 
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`;
+  // Não precisamos mais da URL do OpenRouter nem da chave de API aqui no Front-End!
+  const API_URL = `/.netlify/functions/chat`;
 
   if (whatsappFloat) {
     whatsappFloat.addEventListener('click', (e) => {
@@ -44,42 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
     chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
   }
 
-  async function sendMessageToGemini(message) {
-    if (API_KEY === 'SUA_CHAVE_API_AQUI') {
-      return "Para que o chat funcione, você precisa inserir sua chave da API do Google AI Studio no arquivo js/chatbot.js.";
-    }
-
+  async function sendMessageToAI(message) {
     try {
+      // Agora o front-end chama o próprio servidor da Netlify
       const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'X-goog-api-key': API_KEY
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          contents: [{
-            parts: [{
-              text: `Você é uma assistente virtual da Acumaru Consultoria Ambiental. 
-Abaixo estão as informações e dados sobre a empresa que você DEVE usar para basear as suas respostas:
-
-${typeof CONTEXTO_CONSULTORIA !== 'undefined' ? CONTEXTO_CONSULTORIA : ''}
-
-=== PERGUNTA DO CLIENTE: ===
-${message}
-=== 
-Responda de forma breve e humanizada e somente ajude o cliente com base no contexto acima se ele pedir(deixe a resposta limpa, sem tags nem outros simbolos se quiser referenciar ou algo do tipo).`
-            }]
-          }]
+          message: message,
+          contextText: typeof CONTEXTO_CONSULTORIA !== 'undefined' ? CONTEXTO_CONSULTORIA : ''
         })
       });
 
       const data = await response.json();
       if (data.error) {
-        throw new Error(data.error.message);
+        throw new Error(data.error);
       }
-      return data.candidates[0].content.parts[0].text;
+      // A funçāo da netlify devolve a resposta no atributo "reply"
+      return data.reply;
     } catch (error) {
-      console.error("Erro ao chamar API Gemini:", error);
+      console.error("Erro ao chamar a Netlify Function:", error);
       return "Desculpe, ocorreu um erro ao processar sua mensagem. Tente novamente mais tarde.";
     }
   }
@@ -100,8 +85,8 @@ Responda de forma breve e humanizada e somente ajude o cliente com base no conte
     chatbotMessages.appendChild(typingMessage);
     chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
 
-    // Pega a resposta do Gemini
-    const reply = await sendMessageToGemini(text);
+    // Pega a resposta da IA
+    const reply = await sendMessageToAI(text);
 
     // Remove o "digitando"
     const indicator = document.getElementById('typing-indicator');
