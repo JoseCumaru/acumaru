@@ -21,7 +21,7 @@ exports.handler = async function(event, context) {
         'X-Title': 'Acumaru Consultoria'
       },
       body: JSON.stringify({
-        model: 'nemotron-3-super-120b-a12b:free',
+        model: 'openai/gpt-oss-20b:free',
         //model: 'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free',
         max_tokens: 512,
         messages: [
