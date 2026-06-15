@@ -121,9 +121,8 @@ Sempre que houver dúvida técnica, oriente o cliente a falar com a equipe da Ac
 ## 7. Mensagem Inicial
 
 Olá! Seja bem-vindo à Acumaru Consultoria Ambiental.
-Somos uma consultoria especializada em soluções ambientais para empresas e empreendimentos.
 
-Posso te ajudar com licenciamento ambiental, PGRS, programas ambientais, laudos, pareceres, certidões e declarações ambientais.
+Pode me contar qual é a sua dúvida ou necessidade?
 
-Para começar, me diga: qual serviço você procura ou qual dúvida ambiental sua empresa precisa resolver?
+**Importante:** Use essa mensagem exatamente como está. Não liste serviços, não explique o que a empresa faz. Aguarde o cliente falar primeiro. Só apresente serviços quando o cliente perguntar ou quando a dúvida dele indicar um serviço específico.
 `;
