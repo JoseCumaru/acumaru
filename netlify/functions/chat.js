@@ -21,7 +21,8 @@ exports.handler = async function(event, context) {
         'X-Title': 'Acumaru Consultoria'
       },
       body: JSON.stringify({
-        model: 'nemotron-3-super-120b-a12b:free',
+        model: 'qwen/qwen3-next-80b-a3b-instruct:free',
+        //model: 'nemotron-3-super-120b-a12b:free',
         //model: 'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free',
         messages: [
           {
