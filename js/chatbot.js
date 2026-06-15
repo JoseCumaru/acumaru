@@ -7,20 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatbotInputField = document.getElementById('chatbot-input-field');
   const chatbotSendBtn = document.getElementById('chatbot-send-btn');
 
-  // Não precisamos mais da URL do OpenRouter nem da chave de API aqui no Front-End!
+ 
   const API_URL = `/.netlify/functions/chat`;
 
   if (whatsappFloat) {
     whatsappFloat.addEventListener('click', (e) => {
-      e.preventDefault(); // Impede de abrir o Whatsapp diretamente ao clicar no botão
+      e.preventDefault();
       chatbotContainer.classList.add('active');
-      whatsappFloat.style.display = 'none'; // Esconde o botão do WhatsApp
+      whatsappFloat.style.display = 'none';
     });
   }
 
   chatbotClose.addEventListener('click', () => {
     chatbotContainer.classList.remove('active');
-    if (whatsappFloat) whatsappFloat.style.display = 'flex'; // Mostra o botão novamente
+    if (whatsappFloat) whatsappFloat.style.display = 'flex';
   });
 
   // Fecha o chat se o usuário clicar fora dele
