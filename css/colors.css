@@ -1,9 +1,10 @@
 :root {
   /* Suas variáveis originais */
   --cor-primaria: #064e3b; 
-  --cor-secundaria: #10b981; 
+  --cor-secundaria: #08745f;
   --cor-destaque: #f97316; 
-  --cor-fundo: #ffffe8;
+  /* Bege provisório, sujeito à aprovação da Adriane. */
+  --cor-fundo: #f2e9dc;
   --cor-fundo-seccao: #ffffff; 
   --cor-texto: #1f2937; 
   --cor-texto-claro: #4b5563; 
