@@ -26,4 +26,12 @@
   --cor-menu-mobile-fundo: var(--cor-header-fundo);
   --cor-menu-mobile-texto: var(--cor-texto-header-nav);
   --cor-menu-mobile-borda: var(--cor-borda-geral);
-} 
+}
+
+/* Estudos de degradê para revisão, preservando o banner original. */
+body .hero .overlay {
+  background: linear-gradient(118deg, rgba(4, 52, 41, 0.88), rgba(5, 78, 72, 0.78) 52%, rgba(8, 60, 80, 0.84));
+}
+body #contato {
+  background: linear-gradient(110deg, #064e3b, #0b5267);
+}
